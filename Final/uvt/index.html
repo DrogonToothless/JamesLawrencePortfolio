@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Utah Valley Taekwondo</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="headercontent">
+                <div class="logocontainer">
+                    <img src="images/Utah Valley Taekwondo.png" class="logo">
+                </div>
+                <div class="nav">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="programs.html">Programs</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="instructors.html">Instructors</a></li>
+                            <li><a href="schedule.html">Schedule</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menubutton"><button onclick="menuOpen()"><span class="material-symbols-outlined" id="menuicon">menu</span></button></div>
+            </div>
+        </header>
+        <div class="menuhide" id="menu">
+            <nav>
+                <ul class="menulist">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="instructors.html">Instructors</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="homebanner">
+            <div class="homebannercontent">
+                <div class="homebannerinfo">
+                    <div class="infoblock teenmartialarts" id="teenslide">
+                        <h1>Teenage Martial Arts</h1>
+                        <div class="teeninfoimage"></div>
+                        <p>Our signature teenage martial arts program accepts all teens with zero discrimiation. Teens will learn the value of hard work, respect, and integrity.</p>
+                    </div>
+                    <div class="infoblock adultmartialarts" id="adultslide">
+                        <h1>Adult Martial Arts</h1>
+                        <div class="adultinfoimage"></div>
+                        <p>Martial arts isn't just for youth, though. Out adult program will build personal skills that will help in life and build a better you.</p>
+                    </div>
+                    <div class="slidebuttons">
+                        <span class="dot" onclick="teenSlide()"></span>
+                        <span class="dot" onclick="adultSlide()"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footercontent">
+                <div class="footercontentblock">
+                    <h4>Contact</h4>
+                    <p>555-555-5555 utv@gmail.com</p>
+                </div>
+                <div class="footercontentblock">
+                    <h4>Address</h4>
+                    <p>1234 Ice Avenue, Coldsberg, Antarctica 96601</p>
+                </div>
+                <div class="footercontentblock">
+                    <h4>Social</h4>
+                    <img src="images/Instagram_logo_2016.svg.png" class="instalogo">
+                </div>
+                <div class="footercontentblock">
+                    <h4><a href="schedule.html" class="schedulelink">Click Here For Hours</a></h4>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

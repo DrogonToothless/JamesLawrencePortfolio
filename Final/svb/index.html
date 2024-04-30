@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custom Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="top">
+      <div class="toppart">ABL SILVER</div>
+      <div class="toppart">ASAP PRO</div>
+      <div class="toppart">OVER THE COUNTER</div>
+      <div class="toppart">ABL MEDICAL</div>
+      <div class="login">LOGIN/ACCOUNT<img src="Images/cart.png"></div>
+    </div>
+    <header>
+      <div class="logo"><img src="Images/silverbioticslogo.png"></div>
+      <div class="navigation">
+        <nav>
+          <ul>
+            <li>Immune Support</li>
+            <li>Silver Gel</li>
+            <li>Skin Cream</li>
+            <li>Lozenges</li>
+            <li>Tooth Gel</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="headerrightspace"></div>
+    </header>
+    <section class="banner1">
+      <h1 class="bannerh11">TAKE CONTROL OF YOUR</h1>
+      <h1 class="bannerh12">FAMILY'S HEALTH.</h1>
+      <h3 class="bannerh31">We offer products that can help guide the</h4>
+      <h3 class="bannerh32">body to total health, inside and out...</h4>
+      <h2 class="bannerh21">naturally, effectively, and safely.</h3>
+    </section>
+    <section class="banner2-1" id="slideone">
+      <div class="banner2-1h1">
+        <h1><i>ADVANCED</i> HEALING</h1>
+        <h1>SKIN CREAM</h1>
+      </div>
+      <div class="attributes">
+        <div class="attribute">
+          <h3>SILVERSOL</h3>
+          <h2>Helps protect the skin & promote natural healing.</h2>
+        </div>
+        <div class="attribute">
+          <h3>COCONUT OIL</h3>
+          <h2>Helps increase hydration & decrease water loss in dry skin.</h2>
+        </div>
+        <div class="attribute">
+          <h3>VITAMIN E</h3>
+          <h2>Helps reduce sun damage and signs of aging.</h2>
+        </div>
+        <div class="attribute">
+          <h3>HYALURONIC ACID</h3>
+          <h2>Hydrates the skin and reduces the appearance of fine lines and wrinkles.</h2>
+        </div>
+      </div>
+      <button>LEARN MORE</button>
+      <img src="Images/skincream.png" class="product">
+      <img src="Images/rotatorbottom.png" class="rotatorbotton">
+      <div class="slidebuttons">
+        <div class="slidebutton" id="slide1" onclick="slideOne()"></div>
+        <div class="slidebutton" id="slide2" onclick="slideTwo()"></div>
+        <div class="slidebutton" id="slide3" onclick="slideThree()"></div>
+      </div>
+    </section>
+    <section class="banner2-2" id="slidetwo">
+      <div class="banner2-2h1">
+        <h1>IMMUNE SUPPORT</h1>
+      </div>
+      <div class="banner2-2text">
+        <h4>Silver Biotics Immune Support supplements are the #1 choice for thousands of doctors and families alike to help suppor their immune syestem. By using it, this may allow your body's own defense system to work more efficiently at maintaining its natural and healty state.</h4>
+      </div>
+      <button>LEARN MORE</button>
+      <img src="Images/immunesupport.png" class="product2">
+      <img src="Images/rotatorbottom.png" class="rotatorbotton">
+      <div class="slidebuttons">
+        <div class="slidebutton" id="slide1" onclick="slideOne()"></div>
+        <div class="slidebutton" id="slide2" onclick="slideTwo()"></div>
+        <div class="slidebutton" id="slide3" onclick="slideThree()"></div>
+      </div>
+    </section>
+    <section class="banner3-3" id="slidethree">
+      <div class="banner3-3h1">
+        <h1>SORE THROAT RELIEF</h1>
+      </div>
+      <div class="banner3-3text">
+        <h4>Need sore throat relief? Silver Biotics Silver Lozenges are the #1 recommended choice for doctors and families alike. They act fast, and last longer than any other brand of lozenges.</h4>
+      </div>
+      <button>LEARN MORE</button>
+      <img src="Images/sblozenges.png" class="product3">
+      <img src="Images/rotatorbottom.png" class="rotatorbotton">
+      <div class="slidebuttons">
+        <div class="slidebutton" id="slide1" onclick="slideOne()"></div>
+        <div class="slidebutton" id="slide2" onclick="slideTwo()"></div>
+        <div class="slidebutton" id="slide3" onclick="slideThree()"></div>
+      </div>
+    </section>
+    <section class="banner3">
+      <div class="leftarrow" onclick="backSlide()"></div>
+      <div class="productslideshow" data-component="slideshow">
+        <div class="productslide" id="bottomslide1">
+          <div class="slidelabel1">NATURAL GRAPEFRUIT SCENT</div>
+          <img src="Images/gfruitscent.png">
+          <h5>Silversol Nano-Silver Infused Skin Cream</h5>
+          <p>Specifically formulated with the moisturizing benefits of hyaluronic acid, coconut oil, and the essence of natural grapefruit oil.</p>
+        </div>
+        <div class="productslide" id="bottomslide2">
+          <div class="slidelabel2">NATURAL LAVENDER SCENT</div>
+          <img src="Images/lavenderscent.png">
+          <h5>Silversol Nano-Silver Infused Skin Cream</h5>
+          <p>Specifically formulated with the moisturizing benefits of hyaluronic acid, coconut oil, and the essence of natural lavender oil.</p>
+        </div>
+        <div class="productslide" id="bottomslide3">
+          <div class="slidelabel3">UNSCENTED</div>
+          <img src="Images/unscented.png">
+          <h5>Silversol Nano-Silver Infused Skin Cream</h5>
+          <p>Specifically formulated with the moisturizing benefits of hyaluronic acid and coconut oil.</p>
+        </div>
+        <div class="productslide" id="bottomslide4">
+          <div class="slidelabel4">IMMUNE SUPPORT</div>
+          <img src="Images/immunesupportprod.png">
+          <h5>Silver Biotics Immune Support Supplements</h5>
+          <p>Silver Biotics Immune Support supplements are the #1 choice for thousands of doctors and families alike to help suppor their immune syestem.</p>
+        </div>
+        <div class="productslide" id="bottomslide5">
+          <div class="slidelabel5">FULL BODY HEALING</div>
+          <img src="Images/silvergel.png">
+          <h5>Silversol Nano-Silver Infused Hydrogel</h5>
+          <p>An essential element in helping to rejuvenate and promote natural healing all over the body.</p>
+        </div>
+        <div class="productslide" id="bottomslide6">
+          <div class="slidelabel6">ORAL CARE</div>
+          <img src="Images/toothgel.png">
+          <h5>Silversol Nano-Silver Infused Tooth Gel</h5>
+          <p>Specifically formulated with a powerful 22ppm silver gel solution to naturally promote healthy teeth and gums.</p>
+        </div>
+        <div class="productslide" id="bottomslide7">
+          <div class="slidelabel7">SORE THROAT RELIEF</div>
+          <img src="Images/sblozenges.png">
+          <h5>Silver Biotics Silver Lozenges</h5>
+          <p>Silver Biotics Silver Lozenges are the #1 recommended choice for doctors and families alike. They act fast, and last longer than any other brand of lozenges.</p>
+        </div>
+      </div>
+      <div class="rightarrow" onclick="forwardSlide()"></div>
+      <img src="Images/carebk.png" class="breaker">
+    </section>
+    <footer>
+      <ul>
+        <li>RETAILERS</li>
+        <li>SIGN UP FOR EMAIL</li>
+        <li>WHOLESALE LOGIN</li>
+        <li>SEARCH</li>
+      </ul>
+      <ul class="ul2">
+        <li>CONTACT</li>
+        <li class="smallli">Disclaimer Legal Notice Privacy Policy Terms of Use</li>
+        <li class="smallli">Careers</li>
+        <li class="smallli">Events</li>
+      </ul>
+    </footer>
+  </body>
+</html>

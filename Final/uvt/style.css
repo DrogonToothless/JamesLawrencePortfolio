@@ -1,0 +1,669 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --blue: #0000b8;
+    --midblue: rgb(0, 0, 129);
+    --darkblue: #000053;
+    --gold: gold;
+}
+header {
+    width: 100%;
+    background-color: var(--blue);
+}
+.headercontent {
+    max-width: 1700px;
+    position: relative;
+    display: grid;
+    grid-template-areas: 'grid' 'nav';
+    margin: 0 auto;
+}
+.logocontainer {
+    width: 468px;
+    height: 132px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    grid-area: "logo";
+}
+.logo {
+    width: 100%;
+    height: 100%;
+}
+.nav {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    grid-area: "nav";
+}
+nav ul {
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+}
+nav ul li {
+    display: inline;
+    font-size: 25px;
+    flex: 6;
+    text-align: center;
+}
+nav ul li a {
+    color: var(--gold);
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline var(--gold);
+}
+.menubutton {
+    display: none;
+    margin: 0 auto;
+}
+.menubutton button {
+    background-color: var(--blue);
+    border: none;
+}
+#menuicon {
+    color: var(--gold);
+    font-size: 40px;
+}
+.menuhide {
+    display: none;
+}
+.menudisplay {
+    width: 400px;
+    background-color: var(--blue);
+    border-top: 3px solid var(--darkblue);
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    z-index: 1;
+}
+.menulist {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.menulist li {
+    padding-bottom: 20px;
+}
+.homebanner {
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 25%, rgba(37, 53, 119, 0.48) 100%), url(images/Dojang_photo.jpg);
+    background-size: contain;
+    background-size: cover;
+    position: relative;
+}
+.homebannercontent {
+    max-width: 1700px;
+    position: relative;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+.homebannerinfo {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: var(--blue);
+    color: var(--gold);
+    border-top: 18px solid gold;
+    border-radius: 15px;
+}
+.infoblock {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.teenmartialarts {
+    display: block;
+}
+.teenmartialarts h1 {
+    font-size: 45px;
+    padding: 30px;
+}
+.teenmartialarts p {
+    font-size: 25px;
+    padding: 30px;
+}
+.teeninfoimage {
+    width: 60%;
+    aspect-ratio: 16/10;
+    background-image: url(images/GettyImages-91947864-584826485f9b5851e5b39270.jpg);
+    background-size: contain;
+    background-size: cover;
+    margin: 0 auto;
+}
+.adultmartialarts {
+    display: none;
+}
+.adultmartialarts h1 {
+    font-size: 45px;
+    padding: 30px;
+}
+.adultmartialarts p {
+    font-size: 25px;
+    padding: 30px;
+}
+.adultinfoimage {
+    width: 60%;
+    aspect-ratio: 16/10;
+    background-image: url(images/adults_feature_1920w.webp);
+    background-size: contain;
+    background-size: cover;
+    margin: 0 auto;
+}
+.slidebuttons {
+    width: 35px;
+    height: 15px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: var(--darkblue);
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot:hover {
+    cursor: pointer;
+}
+footer {
+    width: 100%;
+    background-color: var(--darkblue);
+    color: var(--gold);
+    position: relative;
+}
+.footercontent {
+    max-width: 1700px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footercontentblock {
+    flex: 4;
+    margin: 30px 8%;
+}
+.footercontentblock h4 {
+    font-size: 25px;
+}
+.footercontentblock {
+    font-size: 20px;
+}
+.instalogo {
+    width: 60px;
+    aspect-ratio: 1/1;
+}
+.schedulelink {
+    color: var(--gold);
+    text-decoration: none;
+}
+.schedulelink:hover {
+    text-decoration: underline;
+}
+.programs {
+    width: 100%;
+    background-color: var(--midblue);
+    background-size: contain;
+    background-size: cover;
+    position: relative;
+}
+.programscontent {
+    max-width: 1700px;
+    position: relative;
+    margin: 0 auto;
+    padding: 100px 0px;
+    display: grid;
+    grid-template-areas: 'teenprogram' 'adultprogram';
+}
+.teenprogram {
+    width: 90%;
+    grid-area: teenprogram;
+    background-color: var(--blue);
+    margin: 0 auto;
+    margin-bottom: 100px;
+    border-top: 18px solid var(--gold);
+    border-radius: 15px;
+}
+.teenprogram h1 {
+    color: var(--gold);
+    font-size: 45px;
+    padding: 30px;
+    text-align: center;
+}
+.teenprogramimage {
+    width: 60%;
+    aspect-ratio: 2/1.2;
+    background-image: url(images/GettyImages-91947864-584826485f9b5851e5b39270.jpg);
+    background-size: cover;
+    margin: 0 auto;
+}
+.teenprogram p {
+    color: var(--gold);
+    font-size: 25px;
+    padding: 30px;
+    text-align: center;
+}
+.teenprogram h3 {
+    color: var(--gold);
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+}
+.teenprogramlist {
+    width: 230px;
+    padding: 0px;
+    margin: 0 auto;
+}
+.teenprogramlist ul {
+    padding: 0px;
+    color: var(--gold);
+}
+.teenprogram ul li {
+    list-style-type: none;
+    font-size: 25px;
+    padding: 10px;
+}
+.adultprogram {
+    width: 90%;
+    grid-area: adultprogram;
+    background-color: var(--blue);
+    margin: 0 auto;
+    margin-bottom: 100px;
+    border-top: 18px solid var(--gold);
+    border-radius: 15px;
+}
+.adultprogram h1 {
+    color: var(--gold);
+    font-size: 45px;
+    padding: 30px;
+    text-align: center;
+}
+.adultprogramimage {
+    width: 60%;
+    aspect-ratio: 2/1.2;
+    background-image: url(images/adults_feature_1920w.webp);
+    background-size: cover;
+    margin: 0 auto;
+}
+.adultprogram p {
+    color: var(--gold);
+    font-size: 25px;
+    padding: 30px;
+    text-align: center;
+}
+.adultprogram h3 {
+    color: var(--gold);
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+}
+.adultprogramlist {
+    width: 300px;
+    padding: 0px;
+    margin: 0 auto;
+}
+.adultprogramlist ul {
+    padding: 0px;
+    color: var(--gold);
+}
+.adultprogram ul li {
+    list-style-type: none;
+    font-size: 25px;
+    padding: 10px;
+}
+.aboutus {
+    width: 100%;
+    background-color: var(--midblue);
+    background-size: contain;
+    background-size: cover;
+    position: relative;
+}
+.aboutuscontent {
+    max-width: 1700px;
+    position: relative;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+.aboutusinfo {
+    width: 90%;
+    background-color: var(--blue);
+    margin: 0 auto;
+    margin-bottom: 100px;
+    border-top: 18px solid var(--gold);
+    border-radius: 15px;
+}
+.aboutus h1 {
+    color: var(--gold);
+    font-size: 45px;
+    padding: 30px;
+    text-align: center;
+}
+.aboutusimage {
+    width: 60%;
+    aspect-ratio: 2/1.2;
+    background-image: url(images/Dojang_photo.jpg);
+    background-size: cover;
+    margin: 0 auto;
+}
+.aboutus p {
+    color: var(--gold);
+    font-size: 25px;
+    padding: 30px;
+    text-align: center;
+}
+.reviews {
+    width: 90%;
+    background-color: var(--blue);
+    margin: 0 auto;
+    margin-bottom: 100px;
+    border-top: 18px solid var(--gold);
+    border-radius: 15px;
+}
+.reviews h1 {
+    color: var(--gold);
+    font-size: 45px;
+    padding: 30px;
+    text-align: center;
+}
+.review {
+    border-top: 2px solid var(--darkblue);
+}
+.review h3 {
+    color: var(--gold);
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+}
+.instructors {
+    width: 100%;
+    background-color: var(--midblue);
+    background-size: contain;
+    background-size: cover;
+    position: relative;
+}
+.instructorscontent {
+    max-width: 1700px;
+    position: relative;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+.instructorsinfo {
+    width: 90%;
+    background-color: var(--blue);
+    margin: 0 auto;
+    margin-bottom: 100px;
+    border-top: 18px solid var(--gold);
+    border-radius: 15px;
+    display: grid;
+    grid-template-areas: 'payne' '_ - = +';
+}
+.payne {
+    margin: 0 auto;
+    position: relative;
+    perspective: 500px;
+}
+.payne h1 {
+    color: var(--gold);
+    font-size: 45px;
+    padding: 30px;
+    text-align: center;
+}
+.payneprofile {
+    margin-bottom: 50px;
+    transform-style: preserve-3d;
+}
+.payneprofile:hover .paynefrontface{
+    animation-name: profileflip;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.payneprofile:hover .paynebackface{
+    animation-name: profileflip2;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes profileflip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(180deg);
+        z-index: 0;
+    }
+}
+@keyframes profileflip2 {
+    0% {
+        transform: rotateY(-180deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+        z-index: 1;
+    }
+}
+.paynefrontface {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-image: url(images/360_F_219633151_BW6TD8D1EA9OqZu4JgdmeJGg4JBaiAHj.jpg);
+    background-position: -100px;
+    position: relative;
+    z-index: 1;
+}
+.paynebackface {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: var(--blue);
+    position: absolute;
+    top: 0px;
+    border: 5px solid var(--darkblue);
+    transform: rotateY(180deg);
+}
+.paynebackface p {
+    color: var(--gold);
+    font-size: 25px;
+    padding: 30px;
+    text-align: center;
+}
+.schedule {
+    width: 100%;
+    background-color: var(--midblue);
+}
+.schedulecontent {
+    max-width: 1700px;
+    position: relative;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+.scheduleheader {
+    font-size: 45px;
+    margin: 0 auto;
+    color: var(--gold);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 80px;
+}
+.scheduletable {
+    width: 90%;
+    margin: 0 auto;
+    color: var(--gold);
+    display: grid;
+    grid-template-areas: "monday tuesday wednesday thursday friday";
+    text-align: center;
+}
+.tablepart {
+    margin: 5px;
+}
+.monday {
+    grid-area: monday;
+}
+.tuesday {
+    grid-area: tuesday;
+}
+.wednesday {
+    grid-area: wednesday;
+}
+.thursday {
+    grid-area: thursday;
+}
+.friday {
+    grid-area: friday;
+}
+.tableheader {
+    padding: 10px;
+    font-size: 25px;
+    border-top: 1px solid var(--gold);
+    border-left: 1px solid var(--gold);
+    border-right: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+}
+.tablecell {
+    padding: 10px;
+    font-size: 20px;
+    border-top: 1px solid var(--gold);
+    border-left: 1px solid var(--gold);
+    border-right: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+}
+.contact {
+    width: 100%;
+    background-color: var(--midblue);
+}
+.contactcontent {
+    max-width: 1700px;
+    position: relative;
+    margin: 0 auto;
+    padding: 100px 0px;
+    display: grid;
+    grid-template-areas: "form images";
+}
+.contactform {
+    width: 100%;
+    grid-area: form;
+    grid-column-start: 1.5;
+}
+.formfield {
+    width: 90%;
+}
+label {
+    font-size: 25px;
+    margin: 10px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: var(--gold);
+}
+label::after {
+    content: "*";
+    margin-left: 5px;
+}
+.textinput {
+    width: 100%;
+    border: none;
+    background-color: var(--midblue);
+    border-bottom: 2px solid var(--gold);
+    margin: 10px;
+    padding: 20px;
+    outline: none;
+    color: gold;
+    font-size: 20px;
+}
+.submitbutton {
+    width: 200px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.submit {
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue);
+    color: var(--gold);
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.submit:hover {
+    background-color: var(--darkblue);
+    transition: 0.3s;
+}
+.contactimages {
+    width: 100%;
+    grid-area: images;
+    display: grid;
+    grid-template-areas: 'teenimage' 'adultimage';
+    margin-right: 50px;
+}
+.teenimage {
+    width: 100%;
+    aspect-ratio: 1.5/1;
+    background-image: url(images/GettyImages-91947864-584826485f9b5851e5b39270.jpg);
+    background-size: contain;
+    background-size: cover;
+    grid-area: teenimage;
+}
+.adultimage {
+    width: 100%;
+    aspect-ratio: 1.5/1;
+    background-image: url(images/adults_feature_1920w.webp);
+    background-size: contain;
+    background-size: cover;
+    grid-area: adultimage;
+}
+@media only screen and (max-width: 425px) {
+    
+}
+@media only screen and (max-width: 768px) {
+    .logocontainer {
+        width: 312px;
+        height: 88px;
+    }
+    .nav {
+        display: none;
+    }
+    .menubutton {
+        display: block;
+    }
+    .teeninfoimage {
+        width: 80%;
+    }
+    .adultinfoimage {
+        width: 80%;
+    }
+    .slidebuttons {
+        width: 55px;
+        height: 60px;
+    }
+    .dot {
+        width: 25px;
+        height: 25px;
+    }
+    .teenprogramimage {
+        width: 80%;
+    }
+    .adultprogramimage {
+        width: 80%;
+    }
+    .scheduletable {
+        grid-template-areas: 'monday' 'tuesday' 'wednesday' 'thursday' 'friday';
+        width: 50%;
+    }
+    .tablepart {
+        margin: 20px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .menudisplay {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .contactcontent {
+        grid-template-areas: 'form' 'images';
+    }
+    .contactimages {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+}
